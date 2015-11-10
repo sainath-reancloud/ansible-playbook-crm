@@ -1,0 +1,17 @@
+---
+
+- name: Add a instance ip
+  hosts: localhost
+  tasks:
+    - name: Add new instance to host group
+      add_host: hostname={{ ip }} groupname=launched
+
+- name: Configure instance(s)
+  hosts: launched
+  roles:
+    - { role: crm,
+        roles: "ASYNC",
+        createDB: "false",
+        sysFQDN: "be01.greatvalleyu.com",
+        sqlServerName: "sql01cluster.greatvalleyu.com",
+        reportingURL: "http://support01.greatvalleyu.com/ReportServer" }

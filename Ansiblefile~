@@ -1,0 +1,2 @@
+role 'crm',
+  git: 'https://github.com/sainath-reancloud/ansible-playbook-crm.git', ref: 'master'
