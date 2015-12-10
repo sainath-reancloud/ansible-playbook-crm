@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/sainath-reancloud/ansible-role-crm.git
   ref: master
-  sha: 9cd8c27963622557a3a908dccd8d983408c8569b
+  sha: 72e949c60f5c5851ad0af5ee64ecc498a4bdf2e7
   specs:
     crm (0.1)
 
